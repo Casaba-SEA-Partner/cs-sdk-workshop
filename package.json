@@ -4,9 +4,9 @@
   "private": true,
   "scripts": {
     "demo": "vue-cli-service serve",
+    "dev": "yarn serve --port 3000 --host 0.0.0.0",
     "serve": "vue-cli-service cs:serve",
     "build": "vue-cli-service cs:build",
-    "dev": "yarn && cross-env DEBUG=axios yarn serve --port 3000 --host 0.0.0.0",
     "start": "vue-cli-service cs:start",
     "generate": "vue-cli-service cs:generate",
     "postbuild": "yarn build:components",
@@ -14,7 +14,7 @@
   },
   "dependencies": {
     "apollo-link-http": "^1.5.4",
-    "cs-default-theme": "^2.8.0",
+    "cs-default-theme": "^2.8.2",
     "vue": "^2.5.21"
   },
   "devDependencies": {

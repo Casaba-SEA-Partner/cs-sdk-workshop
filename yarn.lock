@@ -5419,10 +5419,10 @@ crypto-random-string@^1.0.0:
   resolved "https://nexus.dev.casaba.tech/repository/npm/crypto-random-string/-/crypto-random-string-1.0.0.tgz#a230f64f568310e1498009940790ec99545bca7e"
   integrity sha1-ojD2T1aDEOFJgAmUB5DsmVRbyn4=
 
-cs-business-components@^2.8.0:
-  version "2.8.0"
-  resolved "https://nexus.dev.casaba.tech/repository/npm/cs-business-components/-/cs-business-components-2.8.0.tgz#ea38d41c3ffbb3908227cc0508b77f9e07a62204"
-  integrity sha512-BXXfbMqwV04TAJx9GCab980p0nY4y4VVbj6bJf9b98UYZLDkV3CLj1i96wWMY6YPBSC3wQrbsDnhaDOyiTidVQ==
+cs-business-components@^2.8.1:
+  version "2.8.1"
+  resolved "https://nexus.dev.casaba.tech/repository/npm/cs-business-components/-/cs-business-components-2.8.1.tgz#c03eeae263eac53d8b342ef8bef21242301568dc"
+  integrity sha512-a41zqr1as40xIYY+STmsd3XW3KYsJVYjj6O5++qhfzR8zWZ5SWNcaqmfl6angKpoNnrdmDXwdkbi5jbiiAwEcw==
   dependencies:
     "@storybook/vue" "^4.1.4"
     ant-design-vue "^1.1.7"
@@ -5434,10 +5434,10 @@ cs-business-components@^2.8.0:
     vue-router "^3.0.1"
     vuex "^3.0.1"
 
-cs-default-theme@^2.8.0:
-  version "2.8.0"
-  resolved "https://nexus.dev.casaba.tech/repository/npm/cs-default-theme/-/cs-default-theme-2.8.0.tgz#5f259af2f28b03168fc3819b1cbc268d9da091a9"
-  integrity sha512-aDfziyapU/2ZraqQ2tGrnLo/5TVpRSq0X6hbre0nwxwHB+dt75VMT+qMJlykj2v1VQQz9lr+QQRw53YIPquWVg==
+cs-default-theme@^2.8.2:
+  version "2.8.2"
+  resolved "https://nexus.dev.casaba.tech/repository/npm/cs-default-theme/-/cs-default-theme-2.8.2.tgz#881c1ca2e2e16b7c8ed9b292a60e7e96ffc5d016"
+  integrity sha512-W/FuB6gJOf7ePAaLVRmfK4UksbfdCodTeFAS1SJf/ThhC26wBknb7FTAT1MHwJHRMopJiW6KMisS+yDGF5nrjg==
   dependencies:
     "@vueneue/ssr-core" "^0.3.0"
     "@vueneue/ssr-server" "^0.3.0"
@@ -5455,7 +5455,7 @@ cs-default-theme@^2.8.0:
     cafe-ui "^1.0.82"
     casaba-sharp-ui "1.7.1"
     core-js "^2.5.7"
-    cs-business-components "^2.8.0"
+    cs-business-components "^2.8.1"
     cs-ssr-server "^2.5.1"
     cs-utils "^2.7.4"
     currency.js "^1.2.1"
