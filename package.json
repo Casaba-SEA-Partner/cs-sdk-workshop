@@ -1,0 +1,25 @@
+{
+  "name": "my-new-project",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "serve": "vue-cli-service cs:serve",
+    "build": "vue-cli-service cs:build",
+    "dev": "yarn && cross-env DEBUG=axios yarn serve --port 3000 --host 0.0.0.0",
+    "start": "vue-cli-service cs:start",
+    "generate": "vue-cli-service cs:generate",
+    "postbuild": "yarn build:components",
+    "build:components": "vue-cli-service cs:components"
+  },
+  "dependencies": {
+    "apollo-link-http": "^1.5.4",
+    "cs-default-theme": "^2.8.0",
+    "vue": "^2.5.21"
+  },
+  "devDependencies": {
+    "@vue/cli-service": "^3.0.0",
+    "cross-env": "^5.1.1",
+    "vue-cli-plugin-cs-devtools": "latest",
+    "vue-template-compiler": "^2.5.21"
+  }
+}
