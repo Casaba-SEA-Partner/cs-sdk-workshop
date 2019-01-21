@@ -1,4 +1,4 @@
-# my-new-project
+# cs-sdk-workshop
 
 ## Project setup
 ```
