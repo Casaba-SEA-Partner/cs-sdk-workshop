@@ -3,6 +3,7 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
+    "demo": "vue-cli-service serve",
     "serve": "vue-cli-service cs:serve",
     "build": "vue-cli-service cs:build",
     "dev": "yarn && cross-env DEBUG=axios yarn serve --port 3000 --host 0.0.0.0",
