@@ -1,7 +1,7 @@
 <template>
   <div id="app">
     <sea-header title="Casaba SEA"/>
-    <cart />
+    <router-view />
   </div>
 </template>
 

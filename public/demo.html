@@ -6,14 +6,40 @@
 </head>
 <body>
 <div id="app">
-  <p>{{ message }}</p>
+  <p
+    style="color: red"
+    :style="{fontSize: message.length > 2 ? '16px' : '12px' }"
+  >{{ message }}</p>
+  <div>{{ count }}</div>
+  <button @click="plus">+1</button>
+  <button @click="minus">-1</button>
+  <input v-model="message">
+
+  <div v-for="product in products">
+    <div>{{ product.code }}</div>
+    <div v-if="product.onSale">{{ product.name }}</div>
+  </div>
 </div>
 <script>
-new Vue({
+var app = new Vue({
   el: '#app',
   data: {
-    message: 'Hello Vue!'
-  }
+    count: 1,
+    message: 'Hello Casaba!',
+    products: [
+      { code: '111', name: 'T-s', onSale: false },
+      { code: '222', name: 'T-ss', onSale: true },
+      { code: '333', name: 'T-sss', onSale: false },
+    ],
+  },
+  methods: {
+    plus: function () {
+      this.count += 1
+    },
+    minus: function () {
+      this.count -= 1
+    },
+  },
 })
 </script>
 </body>

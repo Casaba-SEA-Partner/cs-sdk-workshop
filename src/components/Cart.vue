@@ -1,14 +1,10 @@
 <template>
   <div class="page-cart">
+    <div class="title">{{ $route.params.id }}</div>
     <div class="title">总价 0</div>
     <div class="list">
       <div v-for="product in cartProducts" class="product">
-        <h3 class="code">商品编号: {{product.code}}</h3>
-        <div class="actions">
-          <button>-</button>
-          <span>数量 {{product.amount}}</span>
-          <button>+</button>
-        </div>
+        <CartItem :product="product" />
       </div>
     </div>
     <div class="bottom-action">
@@ -26,8 +22,11 @@
 </template>
 
 <script>
+import CartItem from './CartItem'
+
 export default {
   name: 'Cart',
+  components: { CartItem },
   data: function () {
     return {
       shouldShowCart: false,
@@ -46,6 +45,3 @@ export default {
 }
 </script>
 
-<style scoped>
-
-</style>
