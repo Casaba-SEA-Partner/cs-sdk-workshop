@@ -1,10 +1,63 @@
 module.exports = {
   root: true,
   env: {
-    node: true
+    browser: true,
+    node: true,
+    jest: true,
   },
-  'extends': [
-    'plugin:vue/essential'
-  ],
-  rules: {}
+  globals: {
+    FB: true,
+  },
+  parserOptions: {
+    parser: 'babel-eslint',
+  },
+  extends: ['@vue/airbnb', 'plugin:vue/recommended'],
+  plugins: ['vue'],
+  rules: {
+    // allow debugger during development
+    'no-console': process.env.CI === 'true' ? 'off' : 'off',
+    'no-debugger': process.env.CI === 'true' ? 'error' : 'off',
+    // vue disable rules
+    'vue/require-prop-types': 0,
+    'vue/require-v-for-key': 0,
+    'vue/no-confusing-v-for-v-if': 0,
+    'vue/require-valid-default-prop': 0,
+    'vue/valid-v-for': 0,
+    'vue/valid-v-model': 0,
+    'vue/max-attributes-per-line': 0,
+    'vue/attribute-hyphenation': 0,
+    'vue/require-default-prop': 0,
+    // airbnb-base disable rules
+    semi: ['error', 'never'],
+    'comma-dangle': ['error', 'always-multiline'],
+    'arrow-parens': ['error', 'as-needed'],
+    quotes: ['error', 'single', { allowTemplateLiterals: true }],
+    'linebreak-style': [0, 'error', 'windows'],
+    'consistent-return': 0,
+    'no-mixed-operators': 0,
+    'no-restricted-globals': 0,
+    'import/no-duplicates': 0,
+    'import/no-named-as-default': 0,
+    'import/no-named-as-default-member': 0,
+    'import/no-unresolved': 0,
+    'import/extensions': 0,
+    'import/no-extraneous-dependencies': 0,
+    'import/no-dynamic-require': 0,
+    'import/prefer-default-export': 0,
+    'no-return-await': 0,
+    'max-len': 0,
+    'no-shadow': 0,
+    'no-param-reassign': 0,
+    'global-require': 0,
+    'object-curly-newline': 0,
+    // jsx and react rule
+    'react/jsx-filename-extension': 0,
+    'react/react-in-jsx-scope': 0,
+    'react/no-unknown-property': 0,
+    'react/no-this-in-sfc': 0,
+    'react/jsx-one-expression-per-line': 0,
+    'react/jsx-curly-spacing': 0,
+    'jsx-a11y/click-events-have-key-events': 0,
+    'jsx-a11y/no-static-element-interactions': 0,
+  },
 }

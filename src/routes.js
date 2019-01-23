@@ -1,6 +1,6 @@
-import routes from '@/routes'
+// import routes from '@/routes'
+import './routes.scss'
 
 export default [
-  ...routes,
   // TODO: customize your extra routes
 ]

@@ -1,0 +1,73 @@
+@import 'casaba-sharp-ui/src/scss/variables/index.scss';
+
+$text-color: #98a2ae;
+$brand-sub-color: #001135;
+
+// Color
+
+$color-normal: #fafafa;
+$color-primary: #fafafa;
+$color-success: #41db99;
+$color-error: #ff4b4b;
+$color-warning: #ff734b;
+$color-info: #318cff;
+$color-white: #fff;
+$color-light-white: #edf3f5;
+$color-yellow: #fffb00;
+$color-black: #273142;
+$color-dark-black: #000;
+$color-dark-gray: #4d5766;
+$color-light-gray: #bec8d2;
+
+$text-color: #98a2ae;
+$title-color: #d9e2f3;
+$border-color: #eee;
+$triangle-color: #d8d8d8;
+
+$theme-color: #5a5a72;
+$warning-color: #e02b27;
+$border-color: #c2c2c2;
+$background-color: #f4f4f4;
+$button-color-from: #2a2675;
+$button-color-to: #6388f0;
+$breadcrumb-item: #707070;
+$breadcrumb-item-visited: #006bb4;
+$footer-background-color: #da9694;
+$common-black: #000;
+$font-color: #303030;
+
+$screen-sea-xlg: 1980px;
+$screen-sea-xlg-min: 1700px;
+$screen-sea-lg: 1440px;
+$screen-sea-lg-min: $screen-sea-lg - 1;
+$screen-sea-md: 1280px;
+$screen-sea-md-min: $screen-sea-md - 1;
+
+// Responsive
+$screen-mobile: 790px;
+$screen-pc: $screen-sm+1;
+$grid-gutter-width: 10px;
+$plp-screen-mobile: 790px;
+
+// font-size
+$font-size-base: 100px;
+
+@function rem($px) {
+  @return $px / $font-size-base * 1rem;
+}
+
+@function remfix($oldRem) {
+  @return $oldRem * 0.12rem;
+}
+
+@font-face {
+  font-family: Baloo;
+  src: local("../fonts/baloo.woff2");
+}
+
+body {
+  font-family: 'Baloo', sans-serif;
+}
+html {
+  font-size: 10px;
+}

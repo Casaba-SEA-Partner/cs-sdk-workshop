@@ -1,0 +1,81 @@
+.language-select {
+  position: relative;
+  cursor: pointer;
+
+  &-default {
+    width: 73px;
+    padding: 5px;
+
+    img {
+      cursor: pointer;
+    }
+  }
+
+  img {
+    width: 30px;
+    height: 15px;
+    border: 1px solid #d3d3d3;
+    vertical-align: top;
+  }
+
+  &-options {
+    position: absolute;
+    top: 20px;
+    display: block;
+    border: 1px solid #999;
+    width: 73px;
+    right: 0;
+    padding: 5px;
+    z-index: 9;
+    background: #fff;
+  }
+
+  &.active {
+    cursor: default;
+
+    span {
+      cursor: text;
+    }
+  }
+
+  .language {
+    position: relative;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    flex-wrap: nowrap;
+
+    &-default {
+      img {
+        cursor: pointer;
+      }
+    }
+
+    img {
+      width: 30px;
+      height: 15px;
+      vertical-align: top;
+      margin-right: 5px;
+    }
+
+    &-options {
+      position: absolute;
+      top: 20px;
+      display: block;
+      border: 1px solid #999;
+      width: 80px;
+      right: 0;
+      padding: 5px;
+      z-index: 9;
+      background: #fff;
+    }
+  }
+
+  .language.active {
+    cursor: default;
+
+    span {
+      cursor: text;
+    }
+  }
+}

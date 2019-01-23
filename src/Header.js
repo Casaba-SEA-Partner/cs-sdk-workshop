@@ -1,3 +1,3 @@
-import SeaHeader from '@/Header'
+import SeaHeader from './components/KidzHeader'
 
 export default SeaHeader

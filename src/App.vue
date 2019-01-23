@@ -1,6 +1,6 @@
 <template>
   <div id="app">
-    <sea-header title="Casaba SEA"/>
+    <sea-header title="Casaba SEA" />
     <router-view />
   </div>
 </template>
@@ -10,17 +10,18 @@ import Cart from './components/Cart.vue'
 import SeaHeader from './components/SeaHeader'
 
 export default {
-  name: 'app',
+  name: 'App',
   components: {
     SeaHeader,
-    Cart
-  }
+    Cart,
+  },
 }
 </script>
 
 <style>
 @import "style/cart/base.css";
 @import "style/cart/cart.css";
+
 #app {
   font-family: 'Avenir', Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
