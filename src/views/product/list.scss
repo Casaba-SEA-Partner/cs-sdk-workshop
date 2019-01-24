@@ -1,4 +1,103 @@
+//@import "~cs-default-theme/src/views/product/list.scss";
+
+@import 'sass/variables.scss';
+
 .product-list-page {
+  .visible-mobile {
+    display: none !important;
+    @media screen and (max-width: $plp-screen-mobile) {
+      display: block !important;
+    }
+  }
+
+  select {
+    background: #fff;
+    border-radius: 0;
+    border-color: #e1e1e1;
+    outline: 0;
+    -webkit-appearance: none;
+    -webkit-border-radius: 0;
+  }
+
+  width: 1300+ 250 + 4px;
+  @media screen and (max-width: 1900px) {
+    width: 1040+ 250 + 4px;
+  }
+  @media screen and (max-width: 1400px) {
+    width: 780 + 250 + 4px;
+  }
+  @media screen and (max-width: 1050px) {
+    width: 520 + 250 + 4px;
+  }
+
   margin: 0 auto;
+  box-sizing: border-box;
   background-color: #fff;
+
+  .product-list-breadcrumb {
+    @media (max-width: $plp-screen-mobile) {
+      display: none;
+
+      &.visible-mobile {
+        text-align: center;
+        font-size: 18px;
+        color: #4a4a4a;
+        line-height: 65px;
+        height: 65px;
+        padding: 0;
+      }
+    }
+
+    color: #a2a3a5;
+    display: block;
+    padding: 20px 0;
+  }
+  .ant-select-selection {
+    border-radius: 25px;
+    color: #6d6e70;
+    font-size: 13px;
+    text-transform: capitalize;
+    box-shadow: 0 0 5px 2px #ccc;
+  }
+  .sort-type .ant-select-arrow {
+    right: 18px;
+  }
+  .plp-navigation .select-icon-page-nav[data-v-0d4cb635] {
+    transform: translate(-60px, 6px);
+  }
+  .product-category {
+    border: solid 1px #ccc;
+    border-radius: 15px;
+    min-height: 220px;
+    padding: 24px 14px;
+  }
+  .product-category .category-menu {
+    width: 200px !important;
+  }
+  .product-category .category-title {
+    color: #6288f0;
+    font-size: 40px;
+    padding-bottom: 10px;
+    border: none;
+  }
+  .product-list-breadcrumb > span:first-child {
+    font-size: 14px !important;
+    font-style: normal;
+    color: #6389f1 !important;
+  }
+  .product-list-breadcrumb > span {
+    font-size: 14px !important;
+  }
+}
+
+.mobile {
+  .product-list-page {
+    .ant-select-selection {
+      border-radius: 0;
+      box-shadow: none;
+    }
+  }
+  .ant-layout-content {
+    z-index: 10;
+  }
 }
